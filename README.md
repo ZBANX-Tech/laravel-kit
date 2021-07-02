@@ -1,7 +1,7 @@
 # Zbanx Laravel Kit
 
 > Zbanx Laravel 基础组件库
->
+
 ## 快速开始
 
 1. 使用 composer 安装
