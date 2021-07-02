@@ -1,0 +1,33 @@
+{
+  "name": "zbanx/laravel-kit",
+  "description": "Zbanx Laravel Kit",
+  "authors": [
+    {
+      "name": "eiixy",
+      "email": "eiixy@zbanx.com"
+    }
+  ],
+  "require": {
+    "laravel/framework": "^6.2|^7|^8"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Zbanx\\Kit\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Zbanx\\Kit\\Providers\\KitServiceProvider"
+      ]
+    }
+  }
+}
