@@ -3,29 +3,28 @@
 namespace Zbanx\Kit\Common;
 
 use Closure;
-use Illuminate\Database\Eloquent\Collection;
 
 class Paginate
 {
     /** @var int */
     private $total;
-    /** @var Collection */
+    /** @var mixed */
     private $items;
     /** @var array */
     private $append = [];
 
-    public function __construct(Collection $items, int $total)
+    public function __construct($items, int $total)
     {
         $this->items = $items;
         $this->total = $total;
     }
 
-    public function getItems(): Collection
+    public function getItems()
     {
         return $this->items;
     }
 
-    public function setItems(Collection $items): Paginate
+    public function setItems($items): Paginate
     {
         $this->items = $items;
         return $this;
