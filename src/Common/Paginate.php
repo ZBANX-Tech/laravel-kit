@@ -46,7 +46,7 @@ class Paginate
     {
         return array_merge($this->append, [
             'total' => $this->total,
-            'data' => $this->items
+            'items' => $this->items
         ]);
     }
 
